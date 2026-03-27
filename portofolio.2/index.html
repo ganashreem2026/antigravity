@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Portfolio Login Page">
+    <title>Portfolio Access</title>
+    <!-- Modern typography from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dynamic animated background -->
+    <div class="background-animation"></div>
+    
+    <main class="login-container">
+        <!-- Glassmorphism Card Wrapper -->
+        <div class="glass-card">
+            <div class="card-header">
+                <div class="avatar-placeholder">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Sign in to access your portfolio dashboard</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <!-- Floating Label Input Design -->
+                <div class="input-group">
+                    <input type="email" id="email" required autocomplete="email" placeholder=" ">
+                    <label for="email">Email Address</label>
+                    <div class="input-highlight"></div>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" required autocomplete="current-password" placeholder=" ">
+                    <label for="password">Password</label>
+                    <div class="input-highlight"></div>
+                </div>
+
+                <!-- Remember Me & Forgot Password Options -->
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <!-- Animated Interactive Submit Button -->
+                <button type="submit" id="submitBtn" class="glow-button">
+                    <span class="button-text">Sign In</span>
+                    <div class="loader-spinner"></div>
+                </button>
+            </form>
+            
+            <div class="signup-prompt">
+                <p>Need access? <a href="#">Request an account</a></p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
